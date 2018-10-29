@@ -30,6 +30,7 @@
 					<ul class="list-group list-group-flush">
 						<a class="list-group-item list-group-item-action">Unique IP Addresses: <b>15</b></a>
 						<a class="list-group-item list-group-item-action">Unique Browsing Sessions: <b>15</b></a>
+						<a class="list-group-item list-group-item-action">Page views: <b>15</b></a>
 					</ul>
 				</div>
 			</div>
@@ -38,7 +39,7 @@
 					<div class="card-header">Info</div>
 					<div class="card-body">
 						<p>This site records the number of page views (total number of times the pages of this site are accessed).</p>
-						<p>Github: <a href="https://github.com/martinmogusu/visitally" title="View source">https://github.com/martinmogusu/visitally</a></p>
+						<p>Github: <a href="https://github.com/martinmogusu/visitally" target="_blank" title="View source">https://github.com/martinmogusu/visitally</a></p>
 					</div>
 				</div>
 			</div>
