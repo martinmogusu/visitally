@@ -8,7 +8,10 @@ class Home extends MY_Controller{
 	}
 
 	public function index(){
-		$this->load->view('home');
+		$request = $this->viewcounter->request_details();
+
+		$data = compact('request');
+		$this->load->view('home', $data);
 	}
 
 }

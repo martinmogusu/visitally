@@ -30,7 +30,8 @@
 					<ul class="list-group list-group-flush">
 						<a class="list-group-item list-group-item-action">Unique IP Addresses: <b>15</b></a>
 						<a class="list-group-item list-group-item-action">Unique Browsing Sessions: <b>15</b></a>
-						<a class="list-group-item list-group-item-action">Page views: <b>15</b></a>
+						<a class="list-group-item list-group-item-action">Unique Browsers: <b>15</b></a>
+						<a class="list-group-item list-group-item-action">Total Referrers: <b>15</b></a>
 					</ul>
 				</div>
 			</div>
@@ -38,8 +39,11 @@
 				<div class="card">
 					<div class="card-header">Info</div>
 					<div class="card-body">
-						<p>This site records the number of page views (total number of times the pages of this site are accessed).</p>
-						<p>Github: <a href="https://github.com/martinmogusu/visitally" target="_blank" title="View source">https://github.com/martinmogusu/visitally</a></p>
+						<p>This site records the number of page views (total number of times the pages of this site are accessed). Github: <a href="https://github.com/martinmogusu/visitally" target="_blank" title="View source">https://github.com/martinmogusu/visitally</a></p>
+						<p><u><i>About you</i></u></p>
+						<p>Your IP address is <b><?php echo $request['ip_address'] ?></b></p>
+						<p>You are using <b><?php echo $request['agent'] ?></b></p>
+						<p>You came here from <b><?php echo $request['referrer'] ?></b></p>
 					</div>
 				</div>
 			</div>
