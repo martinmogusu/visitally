@@ -17,7 +17,7 @@
 	<div style="padding: 0px 15px">
 		<br>
 		<h3 class="text-center">You have</h3>
-		<p class="text-center text-danger" style="font-size: 48px;">20</p>
+		<p class="text-center text-danger" style="font-size: 48px;"><?php echo $summary['total_requests'] ?></p>
 		<h3 class="text-center">page views so far...</h3>
 		<center>
 			<a href="<?php echo base_url() ?>" class="btn btn-dark">Refresh</a>
@@ -28,10 +28,10 @@
 				<div class="card">
 					<div class="card-header">Analytics</div>
 					<ul class="list-group list-group-flush">
-						<a class="list-group-item list-group-item-action">Unique IP Addresses: <b>15</b></a>
-						<a class="list-group-item list-group-item-action">Unique Browsing Sessions: <b>15</b></a>
-						<a class="list-group-item list-group-item-action">Unique Browsers: <b>15</b></a>
-						<a class="list-group-item list-group-item-action">Total Referrers: <b>15</b></a>
+						<a class="list-group-item list-group-item-action">Unique IP Addresses: <b><?php echo $summary['unique_ip'] ?></b></a>
+						<a class="list-group-item list-group-item-action">Unique Browsing Sessions: <b><?php echo $summary['total_sessions'] ?></b></a>
+						<a class="list-group-item list-group-item-action">Unique Browsers: <b><?php echo $summary['unique_browsers'] ?></b></a>
+						<a class="list-group-item list-group-item-action">Unique Referrers: <b><?php echo $summary['unique_referrers'] ?></b></a>
 					</ul>
 				</div>
 			</div>
@@ -44,6 +44,7 @@
 						<p>Your IP address is <b><?php echo $request['ip_address'] ?></b></p>
 						<p>You are using <b><?php echo $request['agent'] ?></b></p>
 						<p>You came here from <b><?php echo $request['referrer'] ?></b></p>
+						<p>You started browsing here on <b><?php echo $request['session_start_time'] ?></b></p>
 					</div>
 				</div>
 			</div>
